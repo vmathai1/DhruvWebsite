@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Dhruv Varghese</title>
+<meta name="description" content="Games and apps built by Dhruv Varghese — high school student passionate about building software and designing games.">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=130">
+</head>
+<body>
+
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<div class="header__blur-band header__blur-band--1" aria-hidden="true"></div>
+<div class="header__blur-band header__blur-band--2" aria-hidden="true"></div>
+<div class="header__blur-band header__blur-band--3" aria-hidden="true"></div>
+<div class="header__blur-band header__blur-band--4" aria-hidden="true"></div>
+<div class="header__blur-band header__blur-band--5" aria-hidden="true"></div>
+<div class="header__blur-band header__blur-band--6" aria-hidden="true"></div>
+<div class="header__blur-band header__blur-band--7" aria-hidden="true"></div>
+<div class="header__tint" aria-hidden="true"></div>
+<header class="site-header" id="header">
+	<div class="header__inner">
+		<a href="index.html#top" class="logo">
+			<span class="logo__bold">DHRUV </span><span class="logo__light">VARGHESE</span>
+		</a>
+
+		<nav class="nav" id="nav">
+			<a href="about.html" class="nav__link">
+				<svg class="nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/><circle cx="12" cy="12" r="10"/></svg>
+				About Me
+			</a>
+			<a href="blog.html" class="nav__link">
+				<svg class="nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v11H8l-4 4V5Z"/></svg>
+				Blogs
+			</a>
+			<a href="projects.html" class="nav__link nav__link--active">
+				<svg class="nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 2.5l2.9 6.4 6.9.7-5.2 4.7 1.5 6.9L12 17.7l-6.1 3.5 1.5-6.9L2.2 9.6l6.9-.7L12 2.5Z"/></svg>
+				Projects
+			</a>
+			<a href="skills.html" class="nav__link">
+				<svg class="nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m18 3 3 3-11 11-4 1 1-4L18 3Z"/></svg>
+				Skills
+			</a>
+			<a href="contact.html" class="nav__link">
+				<svg class="nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.6c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z"/></svg>
+				Contact Me
+			</a>
+		</nav>
+
+		<button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+			<span></span><span></span><span></span>
+		</button>
+	</div>
+</header>
+
+<main id="top">
+
+	<!-- ======================================================
+	     PROJECTS TAB BAR
+	     ====================================================== -->
+	<section class="projects-hero">
+		<div class="projects-tabbar" role="tablist">
+			<button type="button" class="projects-tab" role="tab" data-tab="programming" aria-selected="false">Programming</button>
+			<button type="button" class="projects-tab is-active" role="tab" data-tab="game-development" aria-selected="true">Game Development</button>
+			<button type="button" class="projects-tab" role="tab" data-tab="software-development" aria-selected="false">Software Development</button>
+			<button type="button" class="projects-tab" role="tab" data-tab="creative" aria-selected="false">Creative</button>
+			<button type="button" class="projects-tab" role="tab" data-tab="side-hustle" aria-selected="false">Side Hustle</button>
+		</div>
+	</section>
+
+	<div class="projects-panels">
+
+		<div class="projects-panel" id="panel-programming" role="tabpanel">
+			<p class="projects-empty">More projects coming soon.</p>
+		</div>
+
+		<div class="projects-panel is-active" id="panel-game-development" role="tabpanel">
+
+			<article class="project-entry reveal">
+				<div class="project-entry__header">
+					<div class="project-entry__logo"><img src="images/app-lexo.png" alt="Lexo app icon"></div>
+					<div class="project-entry__body">
+						<h3 class="project-entry__title">Lexo - Word Slide Puzzle</h3>
+						<div class="project-entry__desc">
+							<p><strong>Lexo — Can You Unscramble the Chaos?</strong></p>
+							<p>Lexo is a fresh take on word puzzles. Slide scrambled letter tiles into empty spaces to form valid words across every row. It is easy to learn, challenging to master, and designed to test your vocabulary, speed, and strategy.</p>
+							<p>Move tiles into adjacent empty spaces, rearrange them as often as needed, and complete every row before the 10-minute timer runs out. Lexo features online word validation, time-based scoring, progressive hints, global leaderboards, three difficulty levels, and fresh words in every game.</p>
+							<p><strong>Think fast. Slide smart. Solve Lexo.</strong><br><a href="https://apps.apple.com/us/app/lexo-word-slide-puzzle/id6772054570" target="_blank" rel="noopener">apps.apple.com/us/app/lexo-word-slide-puzzle</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="project-entry__gallery project-entry__gallery--tall">
+					<img src="images/proj-lexo-1.jpg" alt="Lexo screenshot">
+					<img src="images/proj-lexo-2.jpg" alt="Lexo screenshot">
+					<img src="images/proj-lexo-3.jpg" alt="Lexo screenshot">
+					<img src="images/proj-lexo-4.jpg" alt="Lexo screenshot">
+					<img src="images/proj-lexo-5.jpg" alt="Lexo screenshot">
+				</div>
+			</article>
+
+			<article class="project-entry project-entry--reverse reveal">
+				<div class="project-entry__header">
+					<div class="project-entry__logo"><img src="images/logo-turboroll.png" alt="Turbo Roll app icon"></div>
+					<div class="project-entry__body">
+						<h3 class="project-entry__title">Turbo Roll</h3>
+						<div class="project-entry__desc">
+							<p>Turbo Roll is a fast-paced endless runner that challenges players to navigate a speeding tire through a vibrant techno-inspired world filled with obstacles, rewards, and increasing speed. Players must jump, double jump, boost, slow down, and react quickly to avoid hazards such as rocks, falling obstacles, and deadly barriers while collecting stars and diamonds to maximize their score. As the game progresses, the pace intensifies, testing both reflexes and timing. With smooth controls, dynamic visual effects, exciting power-ups, and high-score tracking, Turbo Roll delivers an engaging mobile gaming experience that combines action, strategy, and replay-ability. Designed and developed by Dhruv &amp; Varghese, the game showcases our passion for creating fun, polished, and immersive interactive experiences.</p>
+							<p><a href="https://apps.apple.com/us/app/turbo-roll/id6763379766" target="_blank" rel="noopener">apps.apple.com/us/app/turbo-roll</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="project-entry__gallery project-entry__gallery--grid2">
+					<img src="images/proj-turboroll-1.jpg" alt="Turbo Roll screenshot">
+					<img src="images/proj-turboroll-2.jpg" alt="Turbo Roll screenshot">
+					<img src="images/proj-turboroll-3.jpg" alt="Turbo Roll screenshot">
+					<img src="images/proj-turboroll-4.jpg" alt="Turbo Roll screenshot">
+				</div>
+			</article>
+
+			<article class="project-entry reveal">
+				<div class="project-entry__header">
+					<div class="project-entry__logo"><img src="images/app-snake.png" alt="Snake Block & Chain app icon"></div>
+					<div class="project-entry__body">
+						<h3 class="project-entry__title">Snake Block &amp; Chain</h3>
+						<div class="project-entry__desc">
+							<p>Snake Vortex is a modern reimagining of the classic Snake game that combines fast-paced action with strategic gameplay. Players guide their snake through increasingly challenging levels, collecting colorful blocks to grow longer while avoiding bombs, walls, and the ticking clock. Each level requires reaching a target score to unlock a swirling vortex that serves as the exit, creating an exciting race against time. Featuring smooth controls, vibrant visuals, dynamic animations, and progressively faster gameplay across five unique levels, Snake Vortex showcases my passion for creating engaging mobile games that are both fun to play and rewarding to master.</p>
+							<p><a href="https://apps.apple.com/us/app/snake-block-chain/id6765845302" target="_blank" rel="noopener">apps.apple.com/us/app/snake-block-chain</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="project-entry__gallery project-entry__gallery--tall">
+					<img src="images/proj-snake-1.jpg" alt="Snake Block & Chain screenshot">
+					<img src="images/proj-snake-2.jpg" alt="Snake Block & Chain screenshot">
+					<img src="images/proj-snake-3.jpg" alt="Snake Block & Chain screenshot">
+					<img src="images/proj-snake-4.jpg" alt="Snake Block & Chain screenshot">
+					<img src="images/proj-snake-5.jpg" alt="Snake Block & Chain screenshot">
+				</div>
+			</article>
+
+			<article class="project-entry project-entry--reverse reveal">
+				<div class="project-entry__header">
+					<div class="project-entry__logo"><img src="images/app-doodoodash.png" alt="Doo-Doo Dash app icon"></div>
+					<div class="project-entry__body">
+						<h3 class="project-entry__title">Doo-Doo Dash</h3>
+						<div class="project-entry__desc">
+							<p>Doo-Doo Dash is a lighthearted endless runner that combines fast-paced action with a playful sense of humor. Players race through busy city streets, jumping over obstacles, avoiding hazards, and earning points with every successful dodge. As the game progresses, the challenge intensifies—each collision slows your character down, and too many hits bring the run to an end. Featuring simple one-touch controls, exciting gameplay, and endless replayability, Doo-Doo Dash is perfect for quick gaming sessions while testing players' reflexes, timing, and endurance. Designed and developed by Dhruv &amp; Varghese, the game reflects our passion for creating fun, engaging, and entertaining mobile experiences.</p>
+							<p>Blocked by Apple because of the concept.</p>
+						</div>
+					</div>
+				</div>
+				<div class="project-entry__gallery">
+					<img src="images/proj-doodoodash-1.jpg" alt="Doo-Doo Dash screenshot">
+					<img src="images/proj-doodoodash-2.jpg" alt="Doo-Doo Dash screenshot">
+				</div>
+			</article>
+
+			<div class="blogs-teaser reveal" style="margin-top: 100px;">
+				<div class="section-header">
+					<h2 class="section-header__title">My Blogs</h2>
+					<a href="blog.html" class="section-header__link">View all my blogs</a>
+				</div>
+
+				<article class="blog-card">
+					<div class="blog-card__image">
+						<img src="images/blog-1.jpg" alt="">
+						<h3 class="blog-card__image-title">GENOCIDE OF GENERATION<br>BY FIRE</h3>
+					</div>
+					<div class="blog-card__body">
+						<p>
+							Driving through these marvelously serene landscapes, I saw lots of mountains
+							covered with dead burned trees, curiously searched internet for this devastation
+							and found out that there was a huge wild fire in 2022. My heart sank looking at
+							miles and miles of this devastation. Millions of trees fallen down like fallen
+							soldiers after a world war. The amount and density of these trees take generations
+							to cover a mountain. Takes generations to grow this tall, takes generations to
+							survive and stay green.
+						</p>
+						<a href="blog-details.html" class="text-underline-link">View my full blog</a>
+					</div>
+				</article>
+			</div>
+
+		</div>
+
+		<div class="projects-panel" id="panel-software-development" role="tabpanel">
+			<p class="projects-empty">More projects coming soon.</p>
+		</div>
+
+		<div class="projects-panel" id="panel-creative" role="tabpanel">
+			<p class="projects-empty">More projects coming soon.</p>
+		</div>
+
+		<div class="projects-panel" id="panel-side-hustle" role="tabpanel">
+			<p class="projects-empty">More projects coming soon.</p>
+		</div>
+
+	</div>
+
+</main>
+
+<!-- ======================================================
+     FOOTER
+     ====================================================== -->
+<footer class="site-footer">
+	<div class="section-inner footer__main">
+		<div class="footer__logo">
+			<p class="footer__eyebrow">Student &amp; Creator</p>
+			<p class="footer__name">
+				<span class="footer__name-bold">DHRUV </span><span class="footer__name-light">VARGHESE</span>
+			</p>
+		</div>
+
+		<nav class="footer__nav">
+			<a href="about.html" class="footer__nav-item">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/><circle cx="12" cy="12" r="10"/></svg>
+				About Me
+			</a>
+			<a href="blog.html" class="footer__nav-item">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v11H8l-4 4V5Z"/></svg>
+				Blogs
+			</a>
+			<a href="projects.html" class="footer__nav-item">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 2.5l2.9 6.4 6.9.7-5.2 4.7 1.5 6.9L12 17.7l-6.1 3.5 1.5-6.9L2.2 9.6l6.9-.7L12 2.5Z"/></svg>
+				Projects
+			</a>
+			<a href="contact.html" class="footer__nav-item">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.6c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z"/></svg>
+				Contact
+			</a>
+		</nav>
+
+		<div class="footer__socials">
+			<a href="#" class="footer__social-icon" aria-label="GitHub"><img src="images/icon-github.svg" alt=""></a>
+			<a href="https://www.linkedin.com/in/dhruv-varghese-696487320/" target="_blank" rel="noopener" class="footer__social-icon" aria-label="LinkedIn"><img src="images/icon-linkedin.svg" alt=""></a>
+			<a href="mailto:dhruv.varghese31@gmail.com" class="footer__social-icon" aria-label="Email"><img src="images/icon-mail.svg" alt=""></a>
+		</div>
+	</div>
+
+	<div class="footer__divider"></div>
+
+	<div class="section-inner footer__bottom">
+		<p>© 2025 Dhruv Varghese. All rights reserved.</p>
+		<div class="footer__legal">
+			<a href="#">Privacy Policy</a>
+			<a href="#">Terms of Service</a>
+		</div>
+	</div>
+</footer>
+
+<script src="js/main.js?v=27"></script>
+</body>
+</html>

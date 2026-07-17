@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Me — Dhruv Varghese</title>
+<meta name="description" content="Get in touch with Dhruv Varghese — high school student passionate about building software, designing games, and solving problems creatively.">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=130">
+</head>
+<body>
+
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<div class="header__blur-band header__blur-band--1" aria-hidden="true"></div>
+<div class="header__blur-band header__blur-band--2" aria-hidden="true"></div>
+<div class="header__blur-band header__blur-band--3" aria-hidden="true"></div>
+<div class="header__blur-band header__blur-band--4" aria-hidden="true"></div>
+<div class="header__blur-band header__blur-band--5" aria-hidden="true"></div>
+<div class="header__blur-band header__blur-band--6" aria-hidden="true"></div>
+<div class="header__blur-band header__blur-band--7" aria-hidden="true"></div>
+<div class="header__tint" aria-hidden="true"></div>
+<header class="site-header" id="header">
+	<div class="header__inner">
+		<a href="index.html#top" class="logo">
+			<span class="logo__bold">DHRUV </span><span class="logo__light">VARGHESE</span>
+		</a>
+
+		<nav class="nav" id="nav">
+			<a href="about.html" class="nav__link">
+				<svg class="nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/><circle cx="12" cy="12" r="10"/></svg>
+				About Me
+			</a>
+			<a href="blog.html" class="nav__link">
+				<svg class="nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v11H8l-4 4V5Z"/></svg>
+				Blogs
+			</a>
+			<a href="projects.html" class="nav__link">
+				<svg class="nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 2.5l2.9 6.4 6.9.7-5.2 4.7 1.5 6.9L12 17.7l-6.1 3.5 1.5-6.9L2.2 9.6l6.9-.7L12 2.5Z"/></svg>
+				Projects
+			</a>
+			<a href="skills.html" class="nav__link">
+				<svg class="nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m18 3 3 3-11 11-4 1 1-4L18 3Z"/></svg>
+				Skills
+			</a>
+			<a href="contact.html" class="nav__link nav__link--active">
+				<svg class="nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.6c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z"/></svg>
+				Contact Me
+			</a>
+		</nav>
+
+		<button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+			<span></span><span></span><span></span>
+		</button>
+	</div>
+</header>
+
+<main id="top">
+
+	<section class="blog-page-hero">
+		<h1 class="blog-page-hero__title">Contact Me</h1>
+		<p class="blog-page-hero__desc blog-page-hero__desc--lg">
+			Have a project in mind, a question, or just want to say hi? I'd love to hear from you.
+			Fill out the form below and I'll get back to you as soon as I can.
+		</p>
+		<a href="mailto:dhruv.varghese31@gmail.com" class="contact-email">dhruv.varghese31@gmail.com</a>
+	</section>
+
+	<section class="about-personal">
+		<h2 class="about-personal__title reveal">Get to Know Me</h2>
+		<div class="about-personal__rule reveal"></div>
+
+		<div class="about-personal__grid reveal">
+			<form class="about-form" id="contactForm" action="https://formspree.io/f/mlgqjzgq" method="POST">
+				<div class="about-form__field">
+					<label for="contact-email">Email address</label>
+					<input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+				</div>
+				<div class="about-form__field">
+					<label for="contact-interest">Describe your interest</label>
+					<textarea id="contact-interest" name="interest" rows="4" placeholder="What would you like to talk about?" required></textarea>
+				</div>
+				<button type="submit" class="about-form__submit">Submit</button>
+				<p class="about-form__status" id="contactFormStatus" role="status" aria-live="polite"></p>
+			</form>
+
+			<div class="about-statement">
+				<h3 class="about-statement__title">My Statement</h3>
+				<p class="about-statement__quote">
+					"I believe that technology is most powerful when it's used as a tool for creative
+					expression. My journey is about exploring the intersection of logical code and human
+					emotion—building games that challenge the mind and software that solves real problems,
+					all while staying curious and continuously learning."
+				</p>
+				<div class="about-statement__author">
+					<img src="images/about-avatar.png" alt="">
+					<span>Dhruv Varghese</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</main>
+
+<!-- ======================================================
+     FOOTER
+     ====================================================== -->
+<footer class="site-footer">
+	<div class="section-inner footer__main">
+		<div class="footer__logo">
+			<p class="footer__eyebrow">Student &amp; Creator</p>
+			<p class="footer__name">
+				<span class="footer__name-bold">DHRUV </span><span class="footer__name-light">VARGHESE</span>
+			</p>
+		</div>
+
+		<nav class="footer__nav">
+			<a href="about.html" class="footer__nav-item">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/><circle cx="12" cy="12" r="10"/></svg>
+				About Me
+			</a>
+			<a href="blog.html" class="footer__nav-item">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v11H8l-4 4V5Z"/></svg>
+				Blogs
+			</a>
+			<a href="projects.html" class="footer__nav-item">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 2.5l2.9 6.4 6.9.7-5.2 4.7 1.5 6.9L12 17.7l-6.1 3.5 1.5-6.9L2.2 9.6l6.9-.7L12 2.5Z"/></svg>
+				Projects
+			</a>
+			<a href="contact.html" class="footer__nav-item">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.6c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z"/></svg>
+				Contact
+			</a>
+		</nav>
+
+		<div class="footer__socials">
+			<a href="#" class="footer__social-icon" aria-label="GitHub"><img src="images/icon-github.svg" alt=""></a>
+			<a href="https://www.linkedin.com/in/dhruv-varghese-696487320/" target="_blank" rel="noopener" class="footer__social-icon" aria-label="LinkedIn"><img src="images/icon-linkedin.svg" alt=""></a>
+			<a href="mailto:dhruv.varghese31@gmail.com" class="footer__social-icon" aria-label="Email"><img src="images/icon-mail.svg" alt=""></a>
+		</div>
+	</div>
+
+	<div class="footer__divider"></div>
+
+	<div class="section-inner footer__bottom">
+		<p>© 2025 Dhruv Varghese. All rights reserved.</p>
+		<div class="footer__legal">
+			<a href="#">Privacy Policy</a>
+			<a href="#">Terms of Service</a>
+		</div>
+	</div>
+</footer>
+
+<script src="js/main.js?v=27"></script>
+</body>
+</html>
