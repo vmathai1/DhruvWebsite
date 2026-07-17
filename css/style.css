@@ -115,19 +115,16 @@ button { font-family: inherit; cursor: pointer; }
   border-top: 6px solid var(--color-hot-pink);
   background: none;
 }
-.header__blur-band {
+.header__blur {
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
+  height: 61.64px;
   z-index: 99;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
-.header__blur-band--1 { top: 0;    height: 13.5px; -webkit-backdrop-filter: blur(96px); backdrop-filter: blur(96px); }
-.header__blur-band--2 { top: 11.5px; height: 13.5px; -webkit-backdrop-filter: blur(72px); backdrop-filter: blur(72px); }
-.header__blur-band--3 { top: 23px; height: 13.5px; -webkit-backdrop-filter: blur(50px); backdrop-filter: blur(50px); }
-.header__blur-band--4 { top: 34.5px; height: 13.5px; -webkit-backdrop-filter: blur(32px); backdrop-filter: blur(32px); }
-.header__blur-band--5 { top: 46px; height: 13.5px; opacity: 0.4; -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); }
-.header__blur-band--6 { top: 57.5px; height: 13.5px; opacity: 0.7; -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
-.header__blur-band--7 { top: 69px; height: 13.5px; opacity: 0.9; -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); }
 .header__tint {
   position: fixed;
   left: 0;

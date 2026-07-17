@@ -132,6 +132,46 @@
 
     window.addEventListener('resize', applyBlogOffset);
     setInterval(function () { shiftBlog(1); }, 18000);
+
+    // ── Swipe support (touch) ──────────────────────────────────────────────
+    var blogViewport = blogTrack.parentElement;
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isSwiping = false;
+
+    blogViewport.addEventListener('touchstart', function (e) {
+      var t = e.touches[0];
+      touchStartX = t.clientX;
+      touchStartY = t.clientY;
+      touchDeltaX = 0;
+      isSwiping = true;
+      blogTrack.style.transition = 'none';
+    }, { passive: true });
+
+    blogViewport.addEventListener('touchmove', function (e) {
+      if (!isSwiping) return;
+      var t = e.touches[0];
+      touchDeltaX = t.clientX - touchStartX;
+      var deltaY = t.clientY - touchStartY;
+      if (Math.abs(touchDeltaX) > Math.abs(deltaY)) {
+        blogTrack.style.transform = 'translateX(' + (-blogOffset + touchDeltaX).toFixed(1) + 'px)';
+      }
+    }, { passive: true });
+
+    blogViewport.addEventListener('touchend', function () {
+      if (!isSwiping) return;
+      isSwiping = false;
+      blogTrack.style.transition = '';
+      var threshold = 40;
+      if (touchDeltaX <= -threshold) {
+        shiftBlog(1);
+      } else if (touchDeltaX >= threshold) {
+        shiftBlog(-1);
+      } else {
+        applyBlogOffset();
+      }
+    });
   }
 
   // ── Projects page tabs ───────────────────────────────────────────────────
