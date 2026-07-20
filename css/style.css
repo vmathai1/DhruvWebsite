@@ -3,8 +3,8 @@
    ========================================================================== */
 
 :root {
-  --color-bg: #fdede8;
-  --color-bg-gradient: #fce1da;
+  --color-bg: #ffffff;
+  --color-bg-gradient: #ffffff;
   --color-text: #1a1a1a;
   --color-text-dim: #4a4a4a;
 
@@ -17,7 +17,7 @@
   --color-footer-dark: #26262e;
   --color-footer-icon-bg: #333340;
 
-  --color-bg-blog: #fce2db;
+  --color-bg-blog: #ffffff;
   --color-heading-dark: #00012b;
   --color-text-muted: #666673;
 
@@ -112,7 +112,7 @@ button { font-family: inherit; cursor: pointer; }
   height: var(--header-height);
   display: flex;
   align-items: flex-start;
-  border-top: 6px solid var(--color-hot-pink);
+  border-top: 3px solid #FF92B1;
   background: none;
 }
 .header__blur {
@@ -200,7 +200,7 @@ button { font-family: inherit; cursor: pointer; }
 .nav__icon { width: 20px; height: 20px; flex-shrink: 0; }
 
 .nav__link--active {
-  background: rgba(255, 156, 156, 0.3);
+  background: rgba(255, 156, 156, 0.5);
   color: #000;
   font-weight: 600;
 }
@@ -263,13 +263,30 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 .hero__photo {
-  width: min(474px, 72%);
+  width: min(616px, 72%);
   margin: 0 auto;
+  animation: hero-photo-float 7s ease-in-out infinite;
+  filter: drop-shadow(0 25px 24px rgba(0, 0, 0, 0.18));
+  transition: filter 0.4s ease;
+}
+.hero__photo:hover {
+  filter: drop-shadow(0 35px 30px rgba(235, 97, 150, 0.4));
 }
 .hero__photo img {
   width: 100%;
   height: auto;
   display: block;
+  transition: transform 0.4s ease;
+}
+.hero__photo:hover img {
+  transform: scale(1.03);
+}
+@keyframes hero-photo-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-18px) rotate(1.2deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero__photo { animation: none; }
 }
 
 .hero__wordmark {
@@ -327,13 +344,44 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 .hero__desc {
-  max-width: 780px;
+  max-width: 1200px;
   margin: 20px auto 0;
   font-family: var(--font-heading);
   font-weight: 400;
-  font-size: 24px;
+  font-size: 31.2px;
   line-height: 1.65;
   color: #202020;
+}
+
+/* ==========================================================================
+   HERO MARQUEE
+   ========================================================================== */
+
+.hero-marquee {
+  overflow: hidden;
+  width: 100%;
+  margin: 90pt 0;
+}
+.hero-marquee__track {
+  display: flex;
+  width: max-content;
+  animation: hero-marquee-scroll 60s linear infinite;
+}
+.hero-marquee__item {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(40px, 10.5vw, 150px);
+  line-height: 1;
+  color: #202020;
+}
+@keyframes hero-marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-marquee__track { animation: none; }
 }
 
 /* ==========================================================================
@@ -523,7 +571,7 @@ section { padding: 90px 0; }
   padding-top: 45px;
   padding-bottom: 45px;
   margin-bottom: 60pt;
-  background: rgba(255, 255, 255, 0.5);
+  background: linear-gradient(180deg, #fff7f4 0%, #fce1da 100%);
 }
 .apps::before,
 .apps::after {
@@ -594,7 +642,6 @@ section { padding: 90px 0; }
   border-color: #000;
   color: #fff;
   transform: scale(1.12);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 .blog-carousel__arrow--prev:hover svg { transform: translateX(-2px); }
 .blog-carousel__arrow--next:hover svg { transform: translateX(2px); }
@@ -660,7 +707,6 @@ section { padding: 90px 0; }
   overflow: hidden;
   flex-shrink: 0;
   border: 3px solid #fff;
-  box-shadow: 0 6px 12px rgba(235, 97, 150, 0.35), 0 3px 10px rgba(255, 158, 98, 0.3);
 }
 .blog-teaser-card__parallax {
   position: absolute;
@@ -725,11 +771,7 @@ section { padding: 90px 0; }
 .skills {
   position: relative;
   color: var(--color-maroon);
-  background:
-    radial-gradient(circle at 12% 18%, rgba(235, 97, 150, 0.30), transparent 42%),
-    radial-gradient(circle at 88% 12%, rgba(203, 62, 102, 0.22), transparent 48%),
-    radial-gradient(circle at 55% 95%, rgba(179, 50, 100, 0.18), transparent 50%),
-    linear-gradient(180deg, #fff7f4 0%, #fce7e0 100%);
+  background: #ffffff;
 }
 .skills--page { padding-top: calc(var(--header-height) + 40px); }
 .skills__bg { display: none; }
